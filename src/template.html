@@ -6,16 +6,22 @@
     <title>The Stardrop Saloon</title>
 </head>
 <body>
+    <video autoplay muted loop class="background">
+        <source src="resources/video/bg.mp4" type="video/mp4">
+    </video>
+    <!-- Image displays if the video fails -->
+    <img src="resources/img/bg-fallback.png" alt="Background" class="background">
     <header>
-        <div>The Stardrop Saloon</div>
+        <div class="logo">The Stardrop Saloon</div>
         <nav>
             <button>Home</button>
             <button>Menu</button>
             <button>About</button>
         </nav>
     </header>
-    <div id="content">
-        <video autoplay muted src="resources/video/bg.mp4"></video>
+    <div id="content-container">
+
     </div>
+    <footer>Assets copyright © ConcernedApe 2016</footer>
 </body>
 </html>
