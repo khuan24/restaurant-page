@@ -197,6 +197,15 @@ td.price {
     margin: 0.2rem;
 }
 
+td.price > p {
+    margin: 0;
+}
+
+td.price > p::before {
+    content: url(resources/img/icons/27px-Gold.png);
+    margin-right: 0.2rem;
+}
+
 /* About */
 
 h3 {

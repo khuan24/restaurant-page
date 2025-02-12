@@ -70,7 +70,9 @@ export function renderMenu() {
 
         const priceCell = document.createElement("td")
         priceCell.classList.add("price")
-        priceCell.textContent = obj.price + "g"
+        const price = document.createElement("p")
+        price.textContent = obj.price + "g"
+        priceCell.appendChild(price)
         row.appendChild(priceCell)
 
         return row
