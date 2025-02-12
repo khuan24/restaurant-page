@@ -52,10 +52,12 @@ button {
 h1, h2, h3, h4, h5, h6 {
     color: var(--cream);
     margin: 0;
+    line-height: 1.5;
 }
 
 p {
-    color: var(--off-white)
+    color: var(--off-white);
+    line-height: 2;
 }
 
 header, footer {
@@ -69,7 +71,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2rem 4rem black;
+    box-shadow: 0 1.4rem 4rem black;
 }
 
 .logo {
@@ -115,14 +117,12 @@ img.background {
 /* Home */
 
 h2.home {
-    font-size: 2.8rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    margin: 2rem 0;
 }
 
 p.home {
     font-size: 1.4rem;
-    line-height: 2;
     margin-bottom: 3rem;
 }
 
@@ -141,7 +141,7 @@ p.home {
 img.portrait {
     position: absolute;
     bottom: 0;
-    right: 15%;
+    right: 5%;
     width: 35%;
     height: auto;
 }
@@ -150,13 +150,11 @@ img.portrait {
 h2.menu {
     font-size: 1.6rem;
     background-color: var(--deep-green);
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: 1.2rem auto;
     padding: 2rem;
     width: max-content;
     border-radius: 5px;
     position: relative;
-    z-index: 5;
 }
 
 h2.menu::before, h2.menu::after {
@@ -200,6 +198,44 @@ td.price {
 }
 
 /* About */
+
+h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h3:first-of-type {
+    margin-top: 3rem;
+}
+
+h3:last-of-type {
+    margin-top: 7rem;
+}
+
+p + h3 {
+    margin-top: 3rem;
+}
+
+p.about {
+    font-size: 1.3rem;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.employee img {
+    /* align-self: center; */
+    width: 7%;
+}
+
+img.big {
+    width: 50%;
+    right: 0%;
+}
 
 footer {
     color: var(--cream);
