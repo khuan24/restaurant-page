@@ -42,7 +42,7 @@ img, video {
 
 button {
     font-family: inherit;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     transition: 0.3s;
@@ -76,13 +76,14 @@ header {
 
 .logo {
     font-family: "Jacquard 12";
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--orange);
 }
 
 nav button {
     background-color: transparent;
     color: var(--cream);
+    font-size: 0.8rem;
 }
 
 nav button:hover, .on-page {
@@ -117,12 +118,12 @@ img.background {
 /* Home */
 
 h2.home {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     margin: 2rem 0;
 }
 
 p.home {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 3rem;
 }
 
@@ -130,7 +131,7 @@ p.home {
     background-color: var(--cream);
     color: var(--maroon);
     border-radius: 5px;
-    padding: 1.4em 1.8em;
+    padding: 1em 1.2em;
 }
 
 .view-menu:hover {
@@ -141,17 +142,17 @@ p.home {
 img.portrait {
     position: absolute;
     bottom: 0;
-    right: 5%;
-    width: 35%;
+    right: 10%;
+    width: 30%;
     height: auto;
 }
 
 /* Menu */
 h2.menu {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     background-color: var(--deep-green);
     margin: 1.2rem auto;
-    padding: 2rem;
+    padding: 1rem;
     width: max-content;
     border-radius: 5px;
     position: relative;
@@ -166,7 +167,7 @@ table {
     margin: auto;
     background-image: var(--red-gradient);
     border-radius: 5px;
-    padding: 2rem 2rem;
+    padding: 1.2rem 2rem;
     width: 60%;
     min-width: 400px;
     border-top: solid var(--deep-green) 15px;
@@ -177,15 +178,19 @@ th, td {
 }
 
 tr + tr.category > th {
-    padding-top: 2rem;
+    padding-top: 1.2rem;
 }
 
 th {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 th::before, th::after {
     content: " * ";
+}
+
+td {
+    font-size: 0.8rem;
 }
 
 tr > td:first-child {
@@ -209,7 +214,7 @@ td.price > p::before {
 /* About */
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -227,7 +232,7 @@ p + h3 {
 }
 
 p.about {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .employee {
@@ -242,7 +247,7 @@ p.about {
 }
 
 img.big {
-    width: 50%;
+    width: 45%;
     right: 0%;
 }
 
