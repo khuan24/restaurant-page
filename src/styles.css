@@ -16,12 +16,17 @@
     padding: 0;
 }
 
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     --deep-green: #195700;
     --orange: #FFAA52;
     --cream: #F8D490;
     --off-white: #FFF5E1;
     --maroon: #571319;
+    --red-gradient: linear-gradient(#8a121c, #BD2936);
     
     font-family: "Press Start 2P", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, monospace;
     margin: 0;
@@ -38,9 +43,15 @@ img, video {
 button {
     font-family: inherit;
     font-size: 1.1rem;
+    border: none;
     cursor: pointer;
     transition: 0.3s;
     padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cream);
+    margin: 0;
 }
 
 p {
@@ -49,6 +60,8 @@ p {
 
 header, footer {
     background-color: var(--deep-green);
+    position: relative;
+    z-index: 2; /* Layer on top of the box-shadow in the content container */
 }
 
 header {
@@ -56,17 +69,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2rem 4rem black;
 }
 
 .logo {
     font-family: "Jacquard 12";
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--orange);
 }
 
 nav button {
     background-color: transparent;
-    border: none;
     color: var(--cream);
 }
 
@@ -86,6 +99,107 @@ nav button:hover, .on-page {
 img.background {
     z-index: -2;
 }
+
+.half-full {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3rem 5rem;
+    padding-right: 1.4rem; /* Compensate for the added shadow */
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 0;
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* Home */
+
+h2.home {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+p.home {
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-bottom: 3rem;
+}
+
+.view-menu {
+    background-color: var(--cream);
+    color: var(--maroon);
+    border-radius: 5px;
+    padding: 1.4em 1.8em;
+}
+
+.view-menu:hover {
+    background-color: var(--maroon);
+    color: var(--cream);
+}
+
+img.portrait {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 35%;
+    height: auto;
+}
+
+/* Menu */
+h2.menu {
+    font-size: 1.6rem;
+    background-color: var(--deep-green);
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: max-content;
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+h2.menu::before, h2.menu::after {
+    content: " ~ "
+}
+
+table {
+    color: var(--off-white);
+    margin: auto;
+    background-image: var(--red-gradient);
+    border-radius: 5px;
+    padding: 2rem 2rem;
+    width: 60%;
+    min-width: 400px;
+    border-top: solid var(--deep-green) 15px;
+}
+
+th, td {
+    padding: 0.4rem;
+}
+
+tr + tr.category > th {
+    padding-top: 2rem;
+}
+
+th {
+    font-size: 1.2rem;
+}
+
+th::before, th::after {
+    content: " * ";
+}
+
+tr > td:first-child {
+    width: 15%;
+}
+
+td.price {
+    text-align: right;
+    margin: 0.2rem;
+}
+
+/* About */
 
 footer {
     color: var(--cream);
