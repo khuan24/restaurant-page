@@ -42,7 +42,7 @@ img, video {
 
 button {
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: none;
     cursor: pointer;
     transition: 0.3s;
@@ -76,14 +76,14 @@ header {
 
 .logo {
     font-family: "Jacquard 12";
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--orange);
 }
 
 nav button {
     background-color: transparent;
     color: var(--cream);
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 nav button:hover, .on-page {
@@ -107,8 +107,7 @@ img.background {
     width: 50%;
     height: 100%;
     box-sizing: border-box;
-    padding: 3rem 5rem;
-    padding-right: 1.4rem; /* Compensate for the added shadow */
+    padding: 2rem 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 0;
@@ -118,12 +117,12 @@ img.background {
 /* Home */
 
 h2.home {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 2rem 0;
 }
 
 p.home {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin-bottom: 3rem;
 }
 
@@ -143,15 +142,15 @@ img.portrait {
     position: absolute;
     bottom: 0;
     right: 10%;
-    width: 30%;
+    width: 27%;
     height: auto;
 }
 
 /* Menu */
 h2.menu {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     background-color: var(--deep-green);
-    margin: 1.2rem auto;
+    margin: 2rem auto;
     padding: 1rem;
     width: max-content;
     border-radius: 5px;
@@ -167,34 +166,27 @@ table {
     margin: auto;
     background-image: var(--red-gradient);
     border-radius: 5px;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     width: 60%;
     min-width: 400px;
     border-top: solid var(--deep-green) 15px;
 }
 
 th, td {
-    padding: 0.4rem;
+    padding: 0.2rem;
+    font-size: 0.7rem;
 }
 
 tr + tr.category > th {
-    padding-top: 1.2rem;
-}
-
-th {
-    font-size: 1rem;
+    padding-top: 0.7rem;
 }
 
 th::before, th::after {
     content: " * ";
 }
 
-td {
-    font-size: 0.8rem;
-}
-
 tr > td:first-child {
-    width: 15%;
+    width: 12%;
 }
 
 td.price {
@@ -214,25 +206,25 @@ td.price > p::before {
 /* About */
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 h3:first-of-type {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 h3:last-of-type {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 p + h3 {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 p.about {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .employee {
@@ -248,7 +240,7 @@ p.about {
 
 img.big {
     width: 45%;
-    right: 0%;
+    right: 10%;
 }
 
 footer {
